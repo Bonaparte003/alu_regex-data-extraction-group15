@@ -54,7 +54,7 @@ async function updateContent(index, checkerFunction) {
     `;
 
     try {
-        const data = await fetchData("http://107.22.142.160/api/random");
+        const data = await fetchData("http://54.160.126.224/api");
         if (!data) throw new Error('Data not found!');
 
         const results = checkerFunction(data);
